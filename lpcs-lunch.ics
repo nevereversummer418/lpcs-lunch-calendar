@@ -1,0 +1,126 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LPCS Lunch Calendar//
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260820
+UID:lpcs-2026-08-20
+DESCRIPTION:Alfredo Pasta\nSunbutter & Jelly Sandwich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260817
+UID:lpcs-2026-08-17
+DESCRIPTION:American Sub Sandwich\nGarlic French Bread Pizza
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260821
+UID:lpcs-2026-08-21
+DESCRIPTION:American Sub Sandwich\nBean and Cheese Pupusa
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260831
+UID:lpcs-2026-08-31
+DESCRIPTION:American Sub Sandwich\nMac and Cheese with Pretzel Bites
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260812
+UID:lpcs-2026-08-12
+DESCRIPTION:Blueberry Parfait with Seasonal Muffin\nDomino's Cheese Pizza\
+ nDomino's Pepperoni Pizza\nPeach Parfait with Seasonal Muffin\nStrawberry 
+ Parfait with Seasonal Muffin
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260819
+UID:lpcs-2026-08-19
+DESCRIPTION:Blueberry Parfait with Seasonal Muffin\nChicken Nuggets\nPeach
+  Parfait with Seasonal Muffin\nStrawberry Parfait with Seasonal Muffin
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260826
+UID:lpcs-2026-08-26
+DESCRIPTION:Blueberry Parfait with Seasonal Muffin\nDomino's Cheese Pizza\
+ nDomino's Pepperoni Pizza\nPeach Parfait with Seasonal Muffin\nStrawberry 
+ Parfait with Seasonal Muffin
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260814
+UID:lpcs-2026-08-14
+DESCRIPTION:Bosco Stick with Ranch Seasoning\nItalian Sub\nParmesan Bosco 
+ Stick
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260811
+UID:lpcs-2026-08-11
+DESCRIPTION:Cheese Nachos\nSunbutter & Jelly Sandwich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260827
+UID:lpcs-2026-08-27
+DESCRIPTION:Cheeseburger\nHamburger\nSunbutter & Jelly Sandwich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260818
+UID:lpcs-2026-08-18
+DESCRIPTION:Chicken Patty Sandwich\nSunbutter & Jelly Sandwich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260813
+UID:lpcs-2026-08-13
+DESCRIPTION:French Toast Sticks and Sausage Patty\nSunbutter & Jelly Sandw
+ ich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260828
+UID:lpcs-2026-08-28
+DESCRIPTION:Ground Beef Tacos\nItalian Sub
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260824
+UID:lpcs-2026-08-24
+DESCRIPTION:Italian Sub\nPopcorn Chicken
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260825
+UID:lpcs-2026-08-25
+DESCRIPTION:Orange Chicken with Brown Rice\nSunbutter & Jelly Sandwich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260904
+UID:lpcs-2026-09-04
+DESCRIPTION:American Sub Sandwich\nChicken and Vegetable Potstickers
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260902
+UID:lpcs-2026-09-02
+DESCRIPTION:Blueberry Parfait with Seasonal Muffin\nChicken Nuggets\nPeach
+  Parfait with Seasonal Muffin\nStrawberry Parfait with Seasonal Muffin
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260901
+UID:lpcs-2026-09-01
+DESCRIPTION:Homemade Beef and Bean Chili\nSunbutter & Jelly Sandwich
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LPCS Lunch
+DTSTART;VALUE=DATE:20260903
+UID:lpcs-2026-09-03
+DESCRIPTION:Pasta\, Marinara and Meatballs\nSunbutter & Jelly Sandwich
+END:VEVENT
+END:VCALENDAR
