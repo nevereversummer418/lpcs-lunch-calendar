@@ -1,20 +1,47 @@
 import requests
-from datetime import date
 from calendar import monthrange
+from datetime import date
 from icalendar import Calendar, Event
 
 SCHOOL_ID = "d66290a4-6e72-40e6-9da1-3b1bbd06526c"
 
 BASE_URL = (
     "https://webapis.schoolcafe.com/api/"
-    "CalendarView/GetMonthlyMenuItemsByGrade"
+    "CalendarView/GetMonthlyMenuitemsByGrade"
 )
 
 cal = Calendar()
+cal.add("prodid", "-//LPCS Lunch Calendar//")
+cal.add("version", "2.0")
 
-for year in [2026, 2027]:
-    start_month = 8 if year == 2026 else 1
-    end_month = 12 if year == 2026 else 5
+
+def add_event(serving_date, entrees):
+    event = Event()
+
+    event.add("summary", "LPCS Lunch")
+
+    event.add(
+        "description",
+        "\n".join(entrees)
+    )
+
+    event.add(
+        "dtstart",
+        date.fromisoformat(serving_date)
+    )
+
+    event.add(
+        "uid",
+        f"lpcs-{serving_date}"
+    )
+
+    cal.add_component(event)
+
+
+for year, start_month, end_month in [
+    (2026, 8, 12),
+    (2027, 1, 5),
+]:
 
     for month in range(start_month, end_month + 1):
 
@@ -24,54 +51,77 @@ for year in [2026, 2027]:
             "SchoolId": SCHOOL_ID,
             "StartDate": f"{year}-{month:02d}-01",
             "EndDate": f"{year}-{month:02d}-{last_day}",
-            "ServiceLine": "Main Line",
+            "ServingLine": "Main Line",
             "MealType": "Lunch",
             "Grade": "04",
             "PersonId": "null"
         }
 
-        response = requests.get(BASE_URL, params=params)
+        print(
+            f"Fetching {params['StartDate']} "
+            f"to {params['EndDate']}"
+        )
+
+        response = requests.get(
+            BASE_URL,
+            params=params,
+            headers={
+                "accept": "application/json",
+                "origin": "https://www.schoolcafe.com",
+                "referer": "https://www.schoolcafe.com/"
+            }
+        )
+
+        print(response.url)
+        print(response.status_code)
+
         response.raise_for_status()
 
         data = response.json()
 
+        print("Records:", len(data))
+
         for day in data:
-            serving_date = day.get("Servingdate")
+
+            serving_date = (
+                day.get("Servingdate")
+                or day.get("ServingDate")
+            )
 
             if not serving_date:
                 continue
 
             entrees = []
 
-            for category in day.get("Category", []):
+            def find_entrees(obj):
+                if isinstance(obj, dict):
 
-                if category.get("Name") != "ENTREES":
-                    continue
+                    name = obj.get("Name")
 
-                for item in category.get("Items", []):
-                    desc = item.get("Desc")
+                    if name == "ENTREES":
 
-                    if desc:
-                        entrees.append(desc)
+                        for item in obj.get("Items", []):
+                            desc = item.get("Desc")
 
-            if not entrees:
-                continue
+                            if desc:
+                                entrees.append(desc)
 
-            event = Event()
+                    for value in obj.values():
+                        find_entrees(value)
 
-            event.add("summary", "LPCS Lunch")
+                elif isinstance(obj, list):
+                    for value in obj:
+                        find_entrees(value)
 
-            event.add(
-                "description",
-                "\n".join(entrees)
-            )
+            find_entrees(day)
 
-            event.add(
-                "dtstart",
-                date.fromisoformat(serving_date)
-            )
-
-            cal.add_component(event)
+            if entrees:
+                add_event(
+                    serving_date,
+                    sorted(set(entrees))
+                )
 
 with open("lpcs-lunch.ics", "wb") as f:
     f.write(cal.to_ical())
+
+print("Created lpcs-lunch.ics")
