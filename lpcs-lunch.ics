@@ -96,7 +96,8 @@ BEGIN:VEVENT
 SUMMARY:LPCS Lunch
 DTSTART;VALUE=DATE:20260825
 UID:lpcs-2026-08-25
-DESCRIPTION:Orange Chicken with Brown Rice\nSunbutter & Jelly Sandwich
+DESCRIPTION:Orange Chicken (served with Brown Rice)\nSunbutter & Jelly San
+ dwich
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LPCS Lunch
@@ -225,7 +226,8 @@ BEGIN:VEVENT
 SUMMARY:LPCS Lunch
 DTSTART;VALUE=DATE:20260922
 UID:lpcs-2026-09-22
-DESCRIPTION:Orange Chicken with Brown Rice\nSunbutter & Jelly Sandwich
+DESCRIPTION:Orange Chicken (served with Brown Rice)\nSunbutter & Jelly San
+ dwich
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LPCS Lunch
@@ -341,7 +343,8 @@ BEGIN:VEVENT
 SUMMARY:LPCS Lunch
 DTSTART;VALUE=DATE:20261020
 UID:lpcs-2026-10-20
-DESCRIPTION:Orange Chicken with Brown Rice\nSunbutter & Jelly Sandwich
+DESCRIPTION:Orange Chicken (served with Brown Rice)\nSunbutter & Jelly San
+ dwich
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LPCS Lunch
@@ -456,7 +459,8 @@ BEGIN:VEVENT
 SUMMARY:LPCS Lunch
 DTSTART;VALUE=DATE:20261117
 UID:lpcs-2026-11-17
-DESCRIPTION:Orange Chicken with Brown Rice\nSunbutter & Jelly Sandwich
+DESCRIPTION:Orange Chicken (served with Brown Rice)\nSunbutter & Jelly San
+ dwich
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LPCS Lunch
