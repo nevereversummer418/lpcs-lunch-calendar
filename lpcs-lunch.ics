@@ -151,8 +151,8 @@ DESCRIPTION:Blueberry Parfait with Seasonal Muffin\nChicken Nuggets\nPeach
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LPCS Lunch
-DTSTART;VALUE=DATE:20260923
-UID:lpcs-2026-09-23
+DTSTART;VALUE=DATE:20260925
+UID:lpcs-2026-09-25
 DESCRIPTION:Blueberry Parfait with Seasonal Muffin\nDomino's Cheese Pizza
  \nDomino's Pepperoni Pizza\nPeach Parfait with Seasonal Muffin\nStrawberry
   Parfait with Seasonal Muffin
@@ -197,8 +197,8 @@ DESCRIPTION:French Toast Sticks\nSunbutter & Jelly Sandwich
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LPCS Lunch
-DTSTART;VALUE=DATE:20260925
-UID:lpcs-2026-09-25
+DTSTART;VALUE=DATE:20260923
+UID:lpcs-2026-09-23
 DESCRIPTION:Ground Beef Tacos\nItalian Sub
 END:VEVENT
 BEGIN:VEVENT
